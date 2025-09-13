@@ -1,0 +1,27 @@
+name: G-SellBox
+main: com.gomsv.gSellBox.GSellBox
+version: 1.0.0
+api-version: '1.20'
+author: gomsv
+depend: [Vault]
+softdepend: [ItemsAdder]
+
+commands:
+  판매상자:
+    description: 판매 상자 관련 명령어 (open/register/reload/remove)
+    usage: "/판매상자 <닉네임|등록|리로드|삭제> ..."
+    aliases: [sellbox, gsellbox]
+    permission: gsellbox.use
+permissions:
+  gsellbox.use:
+    default: true
+  gsellbox.admin:
+    default: op
+  gsellbox.register:
+    default: op
+  gsellbox.reload:
+    default: op
+  gsellbox.remove:
+    default: op
+  gsellbox.category:
+    default: op

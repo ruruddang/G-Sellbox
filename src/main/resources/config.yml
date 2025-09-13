@@ -1,0 +1,35 @@
+database:
+  jdbc-url: "jdbc:mysql://localhost:3306/gsellbox?useSSL=false&serverTimezone=Asia/Seoul&characterEncoding=utf8"
+  username: "root"
+  password: "password"
+  pool:
+    maximumPoolSize: 10
+    minimumIdle: 2
+    idleTimeout: 30000       # ms
+    maxLifetime: 1800000     # ms
+    connectionTimeout: 3000  # ms
+
+
+categories:
+  - "농작물"
+  - "고기"
+  - "물고기"
+  - "광물"
+  - "요리"
+  - "보석"
+  - "채집"
+  - "식물"
+  - "기타"
+
+itemsadder:
+  sell_block_id: "gom:sell_box"   # 판매 상자로 사용하고 싶은 IA 블럭 NameSpaceId 적으면 됩니다.
+
+
+gui:
+  sell_title: "§0판매 상자"
+  info_title_prefix: "§0판매 아이템: §8"
+
+
+economy:
+  decimals: 2          # 소수 자리수
+  rounding: "HALF_UP"  # FLOOR, CEIL, HALF_UP, HALF_DOWN, HALF_EVEN
